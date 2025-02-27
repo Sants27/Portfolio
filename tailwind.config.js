@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollPadding: {
+        'nav': '6rem', // Sesuaikan dengan tinggi navbar
+      },
+    },
   },
   plugins: [],
 }
