@@ -1,12 +1,12 @@
 import { Fragment } from "react"
 import Navbar from "../components/Navbar"
-import Certificate from "../components/Certificate"
+// import Certificate from "../components/Certificate"
 
 const Certification = () => {
   return (
     <Fragment>
       <Navbar/>
-      <Certificate/>
+      {/* <Certificate/> */}
     </Fragment> 
   )
 }

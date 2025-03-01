@@ -117,13 +117,13 @@ const Navbar = () => {
                     >
                         <Link to="/project" onClick={closeNav}>Project</Link>
                     </motion.li>
-                    <motion.li 
+                    {/* <motion.li 
                         whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
                         className="transition-colors duration-300"
                     >
                         <Link to="/certification" onClick={closeNav}>Certificate</Link>
-                    </motion.li>
+                    </motion.li> */}
                     <motion.li 
                         whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
@@ -179,13 +179,13 @@ const Navbar = () => {
                         >
                             <Link to="/project" onClick={closeNav}>Project</Link>
                         </motion.li>
-                        <motion.li 
+                        {/* <motion.li 
                             variants={itemVariant}
                             whileHover={{ scale: 1.1, color: "#60a5fa" }}
                             className="transition-colors duration-300"
                         >
                             <Link to="/certification" onClick={closeNav}>Certificate</Link>
-                        </motion.li>
+                        </motion.li> */}
                         <motion.li 
                             variants={itemVariant}
                             whileHover={{ scale: 1.1, color: "#60a5fa" }}
