@@ -97,28 +97,35 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <ul className='hidden md:flex gap-6 lg:gap-12 z-10 cursor-pointer text-base lg:text-xl'>
                     <motion.li 
-                        whileHover={{ scale: 1.05, color: "#D91656" }}
+                        whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
                         className="transition-colors duration-300"
                     >
                         <Link to="/" onClick={closeNav}>Home</Link>
                     </motion.li>
                     <motion.li 
-                        whileHover={{ scale: 1.05, color: "#D91656" }}
+                        whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
                         className="transition-colors duration-300"
                     >
                         <Link to="/about" onClick={closeNav}>About</Link>
                     </motion.li>
                     <motion.li 
-                        whileHover={{ scale: 1.05, color: "#D91656" }}
+                        whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
                         className="transition-colors duration-300"
                     >
                         <Link to="/project" onClick={closeNav}>Project</Link>
                     </motion.li>
                     <motion.li 
-                        whileHover={{ scale: 1.05, color: "#D91656" }}
+                        whileHover={{ scale: 1.05, color: "#60a5fa" }}
+                        transition={{ duration: 0.2 }}
+                        className="transition-colors duration-300"
+                    >
+                        <Link to="/certification" onClick={closeNav}>Certificate</Link>
+                    </motion.li>
+                    <motion.li 
+                        whileHover={{ scale: 1.05, color: "#60a5fa" }}
                         transition={{ duration: 0.2 }}
                         className="transition-colors duration-300"
                     >
@@ -129,7 +136,7 @@ const Navbar = () => {
                 {/* Mobile Menu Toggle */}
                 <motion.div 
                     onClick={toggleNav}
-                    whileHover={{ scale: 1.1, color: "#D91656" }}
+                    whileHover={{ scale: 1.1, color: "#60a5fa" }}
                     transition={{ duration: 0.2 }}
                     whileTap={{ scale: 0.9 }}
                     className='md:hidden z-50 text-purple-500 cursor-pointer p-1'
@@ -153,28 +160,35 @@ const Navbar = () => {
                     >
                         <motion.li 
                             variants={itemVariant}
-                            whileHover={{ scale: 1.1, color: "#D91656" }}
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
                             className="transition-colors duration-300"
                         >
                             <Link to="/" onClick={closeNav}>Home</Link>
                         </motion.li>
                         <motion.li 
                             variants={itemVariant}
-                            whileHover={{ scale: 1.1, color: "#D91656" }}
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
                             className="transition-colors duration-300"
                         >
                             <Link to="/about" onClick={closeNav}>About</Link>
                         </motion.li>
                         <motion.li 
                             variants={itemVariant}
-                            whileHover={{ scale: 1.1, color: "#D91656" }}
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
                             className="transition-colors duration-300"
                         >
                             <Link to="/project" onClick={closeNav}>Project</Link>
                         </motion.li>
                         <motion.li 
                             variants={itemVariant}
-                            whileHover={{ scale: 1.1, color: "#D91656" }}
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
+                            className="transition-colors duration-300"
+                        >
+                            <Link to="/certification" onClick={closeNav}>Certificate</Link>
+                        </motion.li>
+                        <motion.li 
+                            variants={itemVariant}
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
                             className="transition-colors duration-300"
                         >
                             <Link to="/contact" onClick={closeNav}>Contact</Link>
