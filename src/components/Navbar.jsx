@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import myLogo from "../assets//logo/myLogo.png";
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
 
@@ -89,8 +90,11 @@ const Navbar = () => {
     return (
         <div className="fixed top-0 left-0 w-full backdrop-blur-md z-50">
             <div className="max-w-[1300px] mx-auto flex justify-between text-purple-500 font-bold items-center px-3 xs:px-6 sm:px-8 md:px-12 h-16 sm:h-18 md:h-20">
-                {/* Logo/Brand */}
-                <Link to="/" className="text-base xs:text-lg sm:text-xl whitespace-nowrap">
+                {/* Logo + Brand */}
+                <Link to="/" className="flex items-center space-x-3 text-base xs:text-lg sm:text-xl whitespace-nowrap">
+                    {/* Logo */}
+                    <img src={myLogo} alt="Logo" className="w-6 h-6 sm:w-10 sm:h-10 object-contain p-1" />
+                    {/* Nama */}
                     Ignatius Varrel Santoso
                 </Link>
 
